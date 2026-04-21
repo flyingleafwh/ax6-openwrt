@@ -8,9 +8,8 @@ name: ax6-immortalwrt【三联编】
 on:
   #对应的是 UTC 时间，需要转换，0 代表北京时间8点，每个月2日/15日12点编译一次
   #关闭则手动编译
-    workflow_dispatch:
-    inputs:
   workflow_dispatch:
+    inputs:
       multithreading:
         description: "开启多线程编译 (Enable multithreading build)"
         type: boolean
